@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Первый проект по web'у</title>
+	<link rel="stylesheet" href="../css/daystyle.css" id="changeable_styles">
+	<link rel="stylesheet" href="../css/dialogwin.css">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="#"></a>
+		</div>
+		<div>
+		<input type="button" onclick="setCookie('color_of_style', 'стиль адын', 365); document.getElementById('changeable_styles').href = '../css/daystyle.css';" value="дневной стиль">
+		</div>
+		<div>
+		<input type="button" onclick="setCookie('color_of_style', 'стиль адын', 365); document.getElementById('changeable_styles').href = '../css/header2.css';" value="ночной стиль">
+		</div>
+		<div id="menuHeade">
+			<ul>
+				<li><a href="#Mark"><span>О</span>ценки</a></li>
+				<li><a href="#slide"><span>С</span>ериалы</a></li>
+				<li><a href="#emotions"><span>Э</span>моции</a></li>
+				<li><a href="#model"><span>3D</span>-модель</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<div id="zatemnenie">
+      <div id="okno">
+        Добро пожаловать!<br>
+Я, студент группы И-15Б, Никита Трефилов.
+На этом сайте вы сможете узнать про то как я закончил прошлый учебный семестр, какие 3 типа настроения для меня присущи, посмотреть какие последние сериалы и фильмы я посмотрел. <br>
+Цитата которой можно меня охарактеризовать<br>
+"Высокий лентяй кажется еще ленивее"<br>
+© Тристан Бернар
+        <a href="#avatar" class="close">X</a>
+      </div>
+    </div>
+
+	<div id="avatar">
+		<a href="#zatemnenie"></a>
+	</div>
+
+	<div id="Mark">
+ 	<table border="1">
+ 	<tr>
+ 		<th>Предметы</th>
+		<th>Фамилия Преподователя</th>
+		<th>Оценка</th>
+		<th>Оценка по шкале ECTS</th>
+ 	</tr>
+ 	<tr><td>Укр. язык</td><td>Паршина</td><td>95</td><td>A</td></tr>
+   <tr><td>Модел. систем</td><td>Потопальская</td><td>78</td><td>C</td></tr>
+   <tr><td>Мат. методы</td><td>Иглин</td><td>82</td><td>B</td></tr>
+   <tr><td>Охрана Труда</td><td>Кузьменко</td><td>96</td><td>A</td></tr>
+   <tr><td>Комун. сети</td><td>Шелковый</td><td>65</td><td>D</td></tr>
+   <tr><td>Провознавство</td><td>Семко</td><td>97</td><td>A</td></tr>
+   <tr><td>ФВ</td><td>Курий</td><td>75</td><td>C</td></tr>
+   <tr><td>БЖД</td><td>Кузьменко</td><td>84</td><td>B</td></tr>
+   <tr><td>Кол. мех. сист.</td><td>Трубаев</td><td>91</td><td>A</td></tr>
+   <tr><td>Созд. прогр.</td><td>Ларин</td><td>91</td><td>A</td></tr>
+</table>
+</div>
+
+<div class = "slideshow-container" id="slide">
+	<div class="mySlides fade">
+		<a href="http://www.lostfilmhd.ru/publ/serialy/flehsh/1-1-0-50"><img src="../images/Flash TV.jpg"  alt=""></a>
+
+	</div>
+	<div class="mySlides fade">
+		<a href="https://kinogo.by/7898-bones_1-12_sezon_06-10.html"><img src="../images/Bones TV.jpg"   alt=""></a>
+
+	</div>
+	<div class="mySlides fade">
+		<a href="https://kinogo.by/5307-watch-online-serial-pobeg_prison-break_2005-1-2-3-4-sezon.html"><img src="../images/PrisonBreak TV.jpg"  alt=""></a>
+
+	</div>
+	<div class="mySlides fade">
+		<a href="https://kinogo.by/5086-watch-online-serial-doktor-haus_house-md_1-2-3-4-5-6-7-8-sezon.html"><img src="../images/House.jpg"  alt=""></a>
+
+	</div>
+	<div class="mySlides fade">
+		<a href="https://kinogo.by/3442-strazhi-galaktiki.html"><img src="../images/Guardians of the Galaxy.jpg" alt=""></a>
+	</div>
+	<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+	<a class="next" onclick="plusSlides(+1)">&#10095</a>
+</div>
+<br>
+<div style="text-align: center;">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+
+
+
+<div id="emotions">
+		<table>
+		<tr>
+			<th>Радостный</th>
+			<th>Грустный</th>
+			<th>Сейчас</th>
+		</tr>
+			<tr><td><img src="../images/happy.jpg" alt=""></td><td><img src="../images/sad.jpg" alt=""></td><td><img src="../images/now2.jpg" alt=""></td></tr>
+			</table>
+</div>
+
+<div class="mycity">
+	<div class="saltovimg">
+	<img src="../images/Saltovka.jpg" alt="">
+	</div>
+	<h3>Мой родной город - Харьков, а проживаю я на Салтовке.</h3>
+	<h4>В конце 19 века на окраине Харькова, в районе пересечения современных улиц Академика Павлова (тогда улицы Конюшенной) и Салтовского шоссе (тогда оно именовалось просто – «дорога на Салтов»), началась застройка нового района. Поскольку изначально строительство велось вдоль дороги на город Салтов, а не вдоль Конюшенной улицы, район уже в 20 веке получил название «Салтовка».</h4><br>
+	<h4>Одна из самых больших улиц Салтовки носит название «Гвардейцев Широнинцев». Она была названа в честь 25-ти гвардейцев, которыми командовал Петр Широнин, они героически обороняли железнодорожный переезд близ села Тарановка Харьковской области в марте 1943 года Мало кто знает, что последний из оставшихся в живых гвардейцев-широнинцев – Иван Вернигоренко, перед смертью прожил несколько лет именно на улице Гвардейцев Широнинцев, он жил в доме № 77.</h4><br>
+	<h4>Много лет назад на месте современного рынка Барабашово существовала уникальная природная зона. На этом месте в начале 21 века произрастало более 200 видов флоры и проживало более 30 видов птиц. Для того, чтобы сохранить эту уникальную природу в 2001 году был создан Салтовский гидрологический заказник. Однако уже в 2005 году территорию заказника необоснованно признали утратившей свою природную ценность и отдали ее для дальнейшего расширения рынка. Но даже сейчас на том небольшом участке, который остался от бывшего заказника, можно встретить редких птиц. Например, при обследовании территории бывшего заказника был замечена и хищная птица  – степной лунь. </h4><br>
+</div>
+
+<p id="model">3D-модель</p>
+<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/06758631592d4ccd8351eab94a8fcdba/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<div class="link">
+<p>
+    <a href="https://sketchfab.com/models/06758631592d4ccd8351eab94a8fcdba?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Spiderman - Far From Home Suit (Custom)</a>
+    by <a href="https://sketchfab.com/kryptonite33?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Kryptonite</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+</p>
+</div>
+</div>
+
+<footer>
+	<h2>Контакты</h2>
+	<ul>
+		<li>	
+			<a href="https://vk.com/shadow_153"><img src="../images/vkontakte.png" alt=""></a>
+		</li>
+		<li><a href="https:///telegram.me/shadow153X"><img src="../images/Telegram.png" alt=""></a></li>
+		<li><a href="mailto:n_trefilov@ukr.net"><img src="../images/mail.jpg" alt=""></a></li>
+	</ul>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+	<script src="../js/script.js"></script>
+	<script src="../js/java1.js"></script>
+	
+</body>
+</html>
